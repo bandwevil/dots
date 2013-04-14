@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+if [ $# -ne 1 ]
+   then
+      echo "Only one argument!"
+      exit
+fi
+
+mpc clear
+mpc add http://pub3.di.fm:80/di_$1
+mpc play
