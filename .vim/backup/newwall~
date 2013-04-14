@@ -1,5 +1,0 @@
-#!/bin/zsh
-
-file=`ls ~/walls | shuf -n1`
-wallpath=~/walls/${file}
-feh --bg-max $wallpath
