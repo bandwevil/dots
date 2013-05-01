@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+if [ $# -ne 1 ]
+   then
+      echo "Only one argument!"
+      exit
+fi
+
+mpc clear
+mpc add http://pub3.sky.fm:80/sky_$1
+mpc play
+mpc repeat on

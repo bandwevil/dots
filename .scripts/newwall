@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+file=`ls ~/walls | shuf -n1`
+feh --bg-max ~/walls/$file
